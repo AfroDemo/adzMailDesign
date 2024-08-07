@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Email Confirmation</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0; text-align: center; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+    <table cellpadding="0" cellspacing="0" border="0" style="background-color: white; width: 100%; max-width: 600px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin: 20px auto; text-align: center;">
+      <tr>
+        <td style="padding: 20px;">
+          <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; margin-bottom: 20px;">
+            <tr>
+              <td style="text-align: left; padding-right: 10px;">
+                <h1 style="color: #6b38fb; margin: 0; font-size: 24px;">Hello {{ $user->name }}</h1>
+              </td>
+              <td style="text-align: right;">
+                <img src="https://www.afrodemoz.com/static/media/LogoW.60be352d517ead5e067b.png" alt="ADz" style="width: 50px; height: 50px; border-radius: 50%; box-shadow: 1px 1px 8px 1px #888888; background-color:black" />
+              </td>
+            </tr>
+          </table>
+          <p style="font-size: 18px; color: #333;"><strong>Confirm your email</strong></p>
+          <p style="font-size: 18px; color: #333;">Please confirm your account</p>
+          <a href="{{ $verificationUrl }}" style="color: #efedf5; text-decoration: none; font-weight: bold; background-color: #171923; padding: 5px 10px; border-radius: 8px; display: inline-block;">Click Here</a>
+          <p style="font-size: 18px; color: #333;"><strong>Note:</strong> The provided link will expire after one (1) hour</p>
+          <p style="margin-top: 30px; color: #666;">Thanks</p>
+          <p style="color: #666;"><strong>ADZ community member</strong></p>
+          <p style="color: #666;"><a href="https://www.afrodemoz.com" style="color: #6b38fb; text-decoration: none;">www.afrodemoz.com</a></p>
+          <div style="margin-top: 30px;">
+            <a href="#" style="display: inline-block; margin: 0 10px; font-size: 40px; text-decoration: none; color: #000;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="display: inline-block; margin: 0 10px; font-size: 40px; text-decoration: none; color: #000;"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
